@@ -1,0 +1,39 @@
+
+form {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+form button {
+    padding: 14px 25px;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #8b5cf655;
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+}
+
+form button:active {
+    transform: scale(0.96);
+}
+
+@media (max-width: 400px) {
+    form {
+        flex-direction: column;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
